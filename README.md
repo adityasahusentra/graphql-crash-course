@@ -6,6 +6,8 @@ All the course files for the GraphQL Crash Course on the Net Ninja YouTube chann
 
 GraphQL is a query language for your API, and a server-side runtime for executing queries using a type system you define for your data.
 
+It is a layer between client side queries and database.
+
 ## Drawbacks and limitations of REST
 
 1. Over fetching - fetching more data than required, like when there a author linked with a course than needs to be fetched with another API call.
