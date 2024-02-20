@@ -14,9 +14,6 @@ type Author {
     rating: Int!,
     verified: Boolean!
 }
-
-//mandatory field for entry point
-//user can request data only from reviews
 type Query {
     reviews: [Review]
     games: [Game]

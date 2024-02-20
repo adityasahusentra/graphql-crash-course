@@ -7,7 +7,7 @@ import _db from "./_db.js";
 const resolvers = {
   Query: {
     games() {
-      _db.games;
+      return _db.games;
     },
     authors() {
       return _db.authors;
