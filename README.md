@@ -21,14 +21,17 @@ It is a layer between client side queries and database.
 
 and query like this:
 
+```
 Query {
 courses {
 id, title, thumbnail_ur1
 }
 }
+```
 
 2. It allows to fetch nested related data within a query:
 
+```
 Query {
 course(id: "1") {
 i du,
@@ -41,3 +44,4 @@ id, title, thumbnail_url
 }
 }
 }
+```
