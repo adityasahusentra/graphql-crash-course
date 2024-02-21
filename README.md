@@ -45,3 +45,7 @@ id, title, thumbnail_url
 }
 }
 ```
+
+4. Query variables
+
+to retrieve single object by id.
