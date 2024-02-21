@@ -25,6 +25,24 @@ const resolvers = {
       return _db.reviews.find((r) => r.id === args.id);
     },
   },
+  Game: {
+    reviews(parent) {
+      return _db.reviews.filter((r) => r.game_id === parent.id);
+    },
+  },
+  Author: {
+    reviews(parent) {
+      return _db.reviews.filter((r) => r.author_id === parent.id);
+    },
+  },
+  Review: {
+    author(parent) {
+      return _db.authors.find((r) => r.id === parent.author_id);
+    },
+    game(parent) {
+      return _db.games.find((r) => r.id === parent.game_id);
+    },
+  },
 };
 const server = new ApolloServer({
   //typedefs - type definitions and data type and the relationship they have with other data types
