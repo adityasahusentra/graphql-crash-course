@@ -49,3 +49,7 @@ id, title, thumbnail_url
 4. Query variables
 
 to retrieve single object by id.
+
+5. Mutations
+
+Let's you add, update and delete data from db.
